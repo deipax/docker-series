@@ -8,3 +8,5 @@
 /LoggerService/bin
 /Repository/obj
 /Repository/bin
+/.vs
+*.user
