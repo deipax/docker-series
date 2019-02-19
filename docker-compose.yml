@@ -1,0 +1,9 @@
+version: '3.0'
+ 
+services:
+  accountownerapp:
+    image: accountownerservice
+    build:
+      context: .
+    ports:
+      - "8080:80"

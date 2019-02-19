@@ -17,7 +17,14 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{5D2C7222-8879-4094-B748-DE3DE970F709}"
 	ProjectSection(SolutionItems) = preProject
 		.dockerignore = .dockerignore
+		docker-compose.yml = docker-compose.yml
 		Dockerfile = Dockerfile
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Release", "Release", "{CC5EC00F-262F-4B7B-8432-595294615125}"
+	ProjectSection(SolutionItems) = preProject
+		Configs\Release\appsettings.json = Configs\Release\appsettings.json
+		Configs\Release\nlog.config = Configs\Release\nlog.config
 	EndProjectSection
 EndProject
 Global
@@ -105,6 +112,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CC5EC00F-262F-4B7B-8432-595294615125} = {5D2C7222-8879-4094-B748-DE3DE970F709}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {86DE07EE-BE1C-4AAB-ADAA-224170CF42B0}
