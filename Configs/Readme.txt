@@ -22,3 +22,9 @@ docker run --rm -it -p 8080:80 accountownerservice:build
 docker-compose up -d
 docker-compose up --build -d
 docker-compose down
+docker-compose flag -v  # This flag will tell Docker Compose explicitly to destroy any volumes created by the containers.
+
+docker volume create my-vol  # Create a Volume
+docker volume ls  # List a volume
+docker volume inspect <volume name>  # inspect a volume
+docker volume rm <volume name>  # remove a volume

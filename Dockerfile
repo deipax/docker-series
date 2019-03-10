@@ -25,8 +25,8 @@ RUN dotnet test ./Tests/Tests.csproj
 
 RUN dotnet publish -c Release ./AccountOwnerServer/AccountOwnerServer.csproj -o /publish/
 
-COPY ["Configs/Release/appsettings.json", "/publish"]
-COPY ["Configs/Release/nlog.config", "/publish"]
+# COPY ["Configs/Release/appsettings.json", "/publish"]
+# COPY ["Configs/Release/nlog.config", "/publish"]
 
 
 FROM microsoft/dotnet:2.2.2-aspnetcore-runtime-alpine3.8
